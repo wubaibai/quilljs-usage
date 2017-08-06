@@ -90,7 +90,10 @@ const webpackBaseConfig = {
 		],
 		cssRule: {
 			test: /\.css$/,
-			include: /src\/css/,
+			include: [
+				/src\/css/,
+				/src\/library/,
+			],
 			use: {
 				css: 'css-loader',
 				postcss: 'postcss-loader',
