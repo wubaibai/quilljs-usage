@@ -93,6 +93,7 @@ const webpackBaseConfig = {
 			include: [
 				/src\/css/,
 				/src\/library/,
+				/node_modules\/vex-js/,
 			],
 			use: {
 				css: 'css-loader',
