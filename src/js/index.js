@@ -1,15 +1,18 @@
 import Quill from 'quill';
-import { quillOptions, htmlTemplate } from './appConfig';
+import variable, { options, whitList, htmlSample } from './appConfig';
+import textChange from './event/textChange';
 
 import '../library/quill/quill.snow.css';
 import '../css/index/welcome.css';
+import '../css/quill/editor.css';
 
-const initEditor = (sample) => (
-	new Quill(sample, quillOptions)
-);
+const sizeStyle = Quill.import('attributors/style/size');
+const sizeWhiteList = whitList.size.map((size) => `${size}px`);
+sizeStyle.whitelist = sizeWhiteList;
+Quill.register(sizeStyle, false);
 
-const demoEditor = initEditor('#editor-sample');
+variable.editor = new Quill('#editor-sample', options);
 
-demoEditor.clipboard.dangerouslyPasteHTML(0, htmlTemplate);
+variable.editor.clipboard.dangerouslyPasteHTML(0, htmlSample);
 
-// demoEditor.insertEmbed(10, 'image', 'https://codemirror.net/doc/logo.png');
+variable.editor.on('text-change', textChange);
