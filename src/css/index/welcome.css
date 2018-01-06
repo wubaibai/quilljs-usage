@@ -1,5 +1,13 @@
 @import '../common.css';
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 13px;
+}
+
 .center-container {
 	width: 400px;
 	margin: 60px auto 0;
