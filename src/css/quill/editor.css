@@ -1,0 +1,28 @@
+.quill-editor-wrapper {
+	background: #EEE;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	padding: 4px 4px 10px;
+
+	& .ql-toolbar {
+		border: none;
+		padding: 0 0 4px;
+	}
+
+	& .ql-toolbar.ql-snow + .ql-container.ql-snow {
+		background: #FFF;
+		border: 1px solid #DDD;
+		border-radius: 4px;
+	}
+
+	& .ql-toolbar .ql-formats {
+		margin-right: 6px;
+		background: #FFF;
+		border: 1px solid #DDD;
+		border-radius: 4px;
+	}
+
+	& .ql-picker.ql-size {
+		width: 60px;
+	}
+}
