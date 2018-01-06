@@ -1,5 +1,6 @@
 import Quill from 'quill';
-import variable, { options, whitList, htmlSample } from './appConfig';
+import variable from './appConfig';
+import options, { whitList, htmlSample } from './quillConfig';
 import textChange from './event/textChange';
 
 import '../library/quill/quill.snow.css';
