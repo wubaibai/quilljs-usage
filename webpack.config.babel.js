@@ -92,7 +92,7 @@ const webpackBaseConfig = {
 			test: /\.css$/,
 			include: [
 				/src\/css/,
-				/src\/library/,
+				/node_modules\/quill/,
 				/node_modules\/vex-js/,
 			],
 			use: {

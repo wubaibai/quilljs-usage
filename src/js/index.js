@@ -1,9 +1,10 @@
+import 'quill/dist/quill.snow.css';
+
 import Quill from 'quill';
 import variable from './appConfig';
 import options, { whitList, htmlSample } from './quillConfig';
 import textChange from './event/textChange';
 
-import '../library/quill/quill.snow.css';
 import '../css/index/welcome.css';
 import '../css/quill/editor.css';
 
