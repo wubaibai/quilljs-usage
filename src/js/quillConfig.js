@@ -7,7 +7,8 @@ export const whitList = {
 export const htmlSample = `
 	<div class="welcometext-content">
 		<h1 class='tip'>我是H1</h1>
-		<p class='subtitle'>我是P</p>
+		<a href='https://www.surveycake.com'>links</a>
+		<p class='subtitle'>我是P <span style='color: red;'>AAA</span></p>
 		<ul style="list-style-type:none; padding:0px; margin-left:0px; font-size:13.5px;">
 			<li style="margin-bottom:6px;">第一個 li</li>
 			<li style="margin-bottom:6px;">第二個 li</li>
