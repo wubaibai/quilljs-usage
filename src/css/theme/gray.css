@@ -1,0 +1,5 @@
+.quill-editor-wrapper {
+	& .ql-editor {
+		color: #666;
+	}
+}

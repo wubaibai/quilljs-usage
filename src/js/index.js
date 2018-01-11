@@ -7,6 +7,7 @@ import textChange from './event/textChange';
 
 import '../css/index/welcome.css';
 import '../css/quill/editor.css';
+import '../css/theme/gray.css';
 
 const sizeStyle = Quill.import('attributors/style/size');
 const sizeWhiteList = whitList.size.map((size) => `${size}px`);
