@@ -1,4 +1,5 @@
 import 'quill/dist/quill.snow.css';
+import 'font-awesome/css/font-awesome.css';
 
 import $ from 'jquery';
 import Quill from 'quill';

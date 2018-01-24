@@ -93,6 +93,7 @@ const webpackBaseConfig = {
 			include: [
 				/src\/css/,
 				/node_modules\/quill/,
+				/node_modules\/font-awesome/,
 				/node_modules\/vex-js/,
 			],
 			use: {
