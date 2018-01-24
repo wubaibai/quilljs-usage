@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 const sample = `ABCDE
 	<div class="welcometext-content">
+		<div class='hello'>yaya</div>
 		<h1 class='tip'>我是H1</h1>
 		<div class='ansTag' rel='1' data-title='你好嗎1？'>你好嗎11？</div>
 		<span class='ansTag' rel='2' data-title='你好嗎2？'>你好嗎22？</span>

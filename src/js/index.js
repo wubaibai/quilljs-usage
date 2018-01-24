@@ -17,7 +17,7 @@ import textChange from './event/textChange';
 import insertAnswerTag from './event/insertAnswerTag';
 import sizeStyle from './register/sizeStyle';
 import answerTagBlot from './register/answerTagBlot';
-import whostoneIconBlock from './register/whostoneIconBlock';
+import customClassDiv from './register/customClassDiv';
 
 import '../css/index/welcome.css';
 import '../css/quill/editor.css';
@@ -35,7 +35,7 @@ const mappingSampleHtml = [
 
 Quill.register(sizeStyle, false);
 Quill.register(answerTagBlot);
-Quill.register(whostoneIconBlock);
+Quill.register(customClassDiv);
 
 variable.editor = new Quill('#editor-sample', options);
 

@@ -2,7 +2,7 @@ import Quill from 'quill';
 
 const Block = Quill.import('blots/block');
 
-class whostoneIconBlock extends Block {
+class customClassDiv extends Block {
 	static create(value) {
 		const node = super.create();
 		node.setAttribute('class', value.class);
@@ -20,8 +20,7 @@ class whostoneIconBlock extends Block {
 	}
 }
 
-whostoneIconBlock.blotName = 'info-block';
-whostoneIconBlock.className = 'info-block';
-whostoneIconBlock.tagName = 'div';
+customClassDiv.blotName = 'custom-div';
+customClassDiv.tagName = 'div';
 
-export default whostoneIconBlock;
+export default customClassDiv;
