@@ -14,7 +14,7 @@ import answerTagSample, {
 import textChange from './event/textChange';
 import insertAnswerTag from './event/insertAnswerTag';
 import sizeStyle from './register/sizeStyle';
-import AnswerTagBlot from './register/answerTagBlot';
+import answerTagBlot from './register/answerTagBlot';
 
 import '../css/index/welcome.css';
 import '../css/quill/editor.css';
@@ -28,7 +28,7 @@ const mappingSampleHtml = [
 ];
 
 Quill.register(sizeStyle, false);
-Quill.register(AnswerTagBlot);
+Quill.register(answerTagBlot);
 
 variable.editor = new Quill('#editor-sample', options);
 

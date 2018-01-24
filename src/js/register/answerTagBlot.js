@@ -10,7 +10,7 @@ import Quill from 'quill';
 
 const BlockEmbed = Quill.import('blots/block/embed');
 
-class AnswerTagBlot extends BlockEmbed {
+class answerTagBlot extends BlockEmbed {
 	static create(value) {
 		const node = super.create();
 		node.setAttribute('rel', value.rel);
@@ -42,8 +42,8 @@ class AnswerTagBlot extends BlockEmbed {
 	}
 }
 
-AnswerTagBlot.blotName = 'answerTag';
-AnswerTagBlot.className = 'ansTag';
-AnswerTagBlot.tagName = 'span';
+answerTagBlot.blotName = 'answerTag';
+answerTagBlot.className = 'ansTag';
+answerTagBlot.tagName = 'span';
 
-export default AnswerTagBlot;
+export default answerTagBlot;
