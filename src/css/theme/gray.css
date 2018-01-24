@@ -1,18 +1,16 @@
-.quill-editor-wrapper {
-	& .ql-editor {
-		color: #666;
+.ql-editor {
+	color: #666;
 
-		& .ansTag {
-			display: inline-block;
-			color: #FFF;
-			background-color: #5FCBA7;
-			border: 1px solid #3DBA90;
-			padding: 2px 4px;
-			margin: -2px 4px 0;
-			vertical-align: middle;
-			font-size: 13px;
-			line-height: 1.2;
-			border-radius: 2px;
-		}
+	& .ansTag {
+		display: inline-block;
+		color: #FFF;
+		background-color: #5FCBA7;
+		border: 1px solid #3DBA90;
+		padding: 2px 4px;
+		margin: -2px 4px 0;
+		vertical-align: middle;
+		font-size: 13px;
+		line-height: 1.2;
+		border-radius: 2px;
 	}
 }

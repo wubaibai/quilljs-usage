@@ -51,6 +51,29 @@ export const sampleCustomizeText = `<p>邀您填寫【<span style="color:#FF0000
 		</div>
 	</div>
 `;
+
+export const sampleCustomizeNewText = `<p>邀您填寫【<u style="color: rgb(255, 0, 0);">XXXXXXXXXXXX</u>】網路問卷！只要符合資格且完整填答此份問卷，即可獲得互動網點數&nbsp;<u style="color: rgb(255, 0, 0);">XXX</u>&nbsp;點！</p>
+<p>
+    <br>
+</p>
+<ul>
+    <li><strong style="color: rgb(21, 157, 171); font-size: 12px;">活動期間：</strong>即日起至 <u style="color: rgb(255, 0, 0);">20XX</u> 年 <u style="color: rgb(255, 0, 0);">XX</u> 月 <u style="color: rgb(255, 0, 0);">XX</u> 日止</li>
+    <li><strong style="color: rgb(21, 157, 171); font-size: 12px;">活動方式：</strong>凡登入會員，可透過電腦、平板、手機連結QRCode或活動網址進入問卷開始填答。完整填答後，即可到會員中心確認並兌換【<u style="color: rgb(255, 0, 0);">精品禮券</u>】喔！</li>
+</ul>
+<p>(在調查結束後，我們會透過系統進行可信度管理作業，檢定結果如有應答內容邏輯不符、答非所問或非可判斷之文字、不實情況等，將不予贈點，盼您見諒！)</p>
+<div class="info-block info-block-bonus">
+	<img src="https://whostone.svy.do/assets/theme/whostone/template-benifit.png">
+	<span style="color: rgb(247, 143, 18);">紅利點數 N</span>
+</div>
+<div class="info-block info-block-draw">
+	<img src="https://whostone.svy.do/assets/theme/whostone/template-gift.png">
+	<span style="color: rgb(247, 143, 18);">抽獎機會 N 次</span>
+</div>
+<div class="info-block info-block-regneed">
+	<img src="https://whostone.svy.do/assets/theme/whostone/template-vip.png">
+	<span style="color: rgb(247, 143, 18);">會員獨享</span>
+</div>
+`;
 /* eslint-enable max-len */
 
 export default sample;

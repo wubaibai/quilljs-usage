@@ -11,15 +11,18 @@ import answerTagSample, {
 	sampleStatementTitle,
 	sampleQuoteContent,
 	sampleCustomizeText,
+	sampleCustomizeNewText,
 } from './data/sample';
 import textChange from './event/textChange';
 import insertAnswerTag from './event/insertAnswerTag';
 import sizeStyle from './register/sizeStyle';
 import answerTagBlot from './register/answerTagBlot';
+import whostoneIconBlock from './register/whostoneIconBlock';
 
 import '../css/index/welcome.css';
 import '../css/quill/editor.css';
 import '../css/theme/gray.css';
+import '../css/theme/whostone.css';
 
 const mappingSampleHtml = [
 	answerTagSample,
@@ -27,10 +30,12 @@ const mappingSampleHtml = [
 	sampleStatementTitle,
 	sampleQuoteContent,
 	sampleCustomizeText,
+	sampleCustomizeNewText,
 ];
 
 Quill.register(sizeStyle, false);
 Quill.register(answerTagBlot);
+Quill.register(whostoneIconBlock);
 
 variable.editor = new Quill('#editor-sample', options);
 
