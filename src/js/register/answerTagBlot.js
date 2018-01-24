@@ -8,7 +8,7 @@ import Quill from 'quill';
  * https://stackoverflow.com/questions/37796409/is-it-possible-to-create-a-custom-format-blot-with-complex-substructure
  */
 
-const BlockEmbed = Quill.import('blots/block/embed');
+const BlockEmbed = Quill.import('blots/embed');
 
 class answerTagBlot extends BlockEmbed {
 	static create(value) {
