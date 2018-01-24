@@ -22,7 +22,7 @@ const webpackBuildConfig = {
 		publicPath: websiteJson.multiLanguage ?
 			(websiteJson.domain.asset.value ? `//${websiteJson.domain.asset.value}/` : '/assets/')
 		:
-			'/',
+			'/quilljs-usage/',
 	},
 	module: {
 		rules: base.module.rules.concat(
