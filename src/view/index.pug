@@ -8,9 +8,26 @@ html(lang='zh-Hant')
 	body
 
 		.center-container
+			.before
+				label 2.0 問卷 Html
+				pre
 
-			.quill-editor-wrapper
+			.editor
+				.demo-option
+					label 選擇測試範本
+					select.sample-selector
+						option() 請選擇
+						option(value='0') With Answer-Tag
+						option(value='1') Welcome Text
+						option(value='2') Statement Title
+						option(value='3') Quote Content
 
-				include ./common/quill-toolbar.pug
+				.quill-editor-wrapper
 
-				#editor-sample
+					include ./common/quill-toolbar.pug
+
+					#editor-sample
+
+			.after
+				label 3.0 問卷 Html
+				pre
