@@ -10,6 +10,7 @@ import answerTagSample, {
 	sampleWelcomeText,
 	sampleStatementTitle,
 	sampleQuoteContent,
+	sampleCustomizeText,
 } from './data/sample';
 import textChange from './event/textChange';
 import insertAnswerTag from './event/insertAnswerTag';
@@ -25,6 +26,7 @@ const mappingSampleHtml = [
 	sampleWelcomeText,
 	sampleStatementTitle,
 	sampleQuoteContent,
+	sampleCustomizeText,
 ];
 
 Quill.register(sizeStyle, false);
