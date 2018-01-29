@@ -30,6 +30,7 @@ const options = {
 		},
 		wordCounter: {
 			container: '.ql-word-count',
+			limit: 200,
 		},
 	},
 	theme: 'snow',

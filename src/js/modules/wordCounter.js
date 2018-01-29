@@ -14,9 +14,15 @@ class wordCounter {
 	}
 
 	calculate() {
-		const text = this.quill.getText() ? this.quill.getText().trim() : '';
+		const length = this.quill.getLength() - 1;
 
-		return text.length || '';
+		if (this.options.limit && length > this.options.limit) {
+			this.quill.deleteText(this.options.limit, length);
+
+			return this.options.limit;
+		}
+
+		return length || '';
 	}
 
 	update() {
