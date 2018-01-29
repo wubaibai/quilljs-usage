@@ -14,21 +14,14 @@ class wordCounter {
 	}
 
 	calculate() {
-		let text = this.quill.getText();
-
-		if (this.options.unit === 'word') {
-			text = text.trim();
-			return text.length > 0 ? text.split(/\s+/).length : 0;
-		}
-
-		return text.length;
+		const text = this.quill.getText() ? this.quill.getText().trim() : '';
+		return text.length || '';
 	}
 
 	update() {
 		const length = this.calculate();
-		const unit = this.options.unit;
 
-		this.container.innerHTML = `${length} ${unit}`;
+		this.container.innerHTML = `${length}`;
 	}
 }
 
