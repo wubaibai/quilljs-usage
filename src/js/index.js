@@ -3,6 +3,7 @@ import 'font-awesome/css/font-awesome.css';
 
 import $ from 'jquery';
 import Quill from 'quill';
+import imageResize from 'quill-image-resize-module';
 
 import variable from './appConfig';
 import options from './quillConfig';
@@ -36,6 +37,7 @@ const mappingSampleHtml = [
 Quill.register(sizeStyle, false);
 Quill.register(answerTagBlot);
 Quill.register(customClassDiv);
+Quill.register('modules/imageResize', imageResize);
 
 variable.editor = new Quill('#editor-sample', options);
 

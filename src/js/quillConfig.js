@@ -12,6 +12,22 @@ const options = {
 				image: imageHandler,
 			},
 		},
+		imageResize: {
+			modules: ['Resize', 'DisplaySize'],
+			handleStyles: {
+				backgroundColor: '#FFF',
+				border: '#999 1px solid',
+				borderRadius: '2px',
+			},
+			displayStyles: {
+				backgroundColor: 'black',
+				border: 'none',
+				color: '#3DBA90',
+			},
+			overlayStyles: {
+				border: 'none',
+			},
+		},
 	},
 	theme: 'snow',
 };

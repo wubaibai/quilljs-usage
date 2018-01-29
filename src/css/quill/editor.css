@@ -97,4 +97,10 @@
 	& .ql-picker.ql-size {
 		width: 60px;
 	}
+
+	& .ql-editor {
+		& .ql-embed-selected {
+			border: 1px dashed #999;
+		}
+	}
 }

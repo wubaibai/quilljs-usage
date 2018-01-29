@@ -207,6 +207,7 @@ const webpackBaseConfig = {
 			jQuery: 'jquery',
 			'window.jQuery': 'jquery',
 			'root.jQuery': 'jquery',
+			'window.Quill': 'quill/dist/quill.js',
 		}),
 
 		loaderOptionsPlugin: new webpack.LoaderOptionsPlugin({
