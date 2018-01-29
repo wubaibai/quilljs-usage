@@ -15,6 +15,7 @@ class wordCounter {
 
 	calculate() {
 		const text = this.quill.getText() ? this.quill.getText().trim() : '';
+
 		return text.length || '';
 	}
 
