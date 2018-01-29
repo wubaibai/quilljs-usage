@@ -16,6 +16,7 @@ import answerTagSample, {
 } from './data/sample';
 import textChange from './event/textChange';
 import insertAnswerTag from './event/insertAnswerTag';
+import wordCounter from './modules/wordCounter';
 import sizeStyle from './register/sizeStyle';
 import answerTagBlot from './register/answerTagBlot';
 import customClassDiv from './register/customClassDiv';
@@ -38,6 +39,7 @@ Quill.register(sizeStyle, false);
 Quill.register(answerTagBlot);
 Quill.register(customClassDiv);
 Quill.register('modules/imageResize', imageResize);
+Quill.register('modules/wordCounter', wordCounter);
 
 variable.editor = new Quill('#editor-sample', options);
 

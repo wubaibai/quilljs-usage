@@ -28,6 +28,10 @@ const options = {
 				border: 'none',
 			},
 		},
+		wordCounter: {
+			container: '.ql-word-count',
+			unit: '',
+		},
 	},
 	theme: 'snow',
 };
