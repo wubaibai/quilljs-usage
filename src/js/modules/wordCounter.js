@@ -18,7 +18,18 @@ class wordCounter {
 		const length = this.quill.getLength() - 1;
 
 		if (this.options.limit && length > this.options.limit) {
-			this.quill.deleteText(this.options.limit, length);
+			const range = this.quill.getSelection();
+
+			if (!range) {
+				/**
+				 * on paste
+				 */
+				this.quill.deleteText(this.options.limit, length);
+
+				return this.options.limit;
+			}
+
+			this.quill.deleteText(range.index - 1, 1);
 
 			return this.options.limit;
 		}
