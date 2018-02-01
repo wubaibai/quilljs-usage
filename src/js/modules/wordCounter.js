@@ -7,6 +7,7 @@ class wordCounter {
 		this.quill = quill;
 		this.options = options;
 		this.container = document.querySelector(options.container);
+		this.container.getElementsByClassName('limit')[0].innerHTML = this.options.limit;
 
 		quill.on('text-change', this.update.bind(this));
 
@@ -28,7 +29,7 @@ class wordCounter {
 	update() {
 		const length = this.calculate();
 
-		this.container.innerHTML = `${length}`;
+		this.container.getElementsByClassName('count')[0].innerHTML = length;
 	}
 }
 
