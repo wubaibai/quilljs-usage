@@ -99,6 +99,9 @@
 	}
 
 	& .ql-editor {
+		max-height: 300px;
+		overflow: auto;
+
 		& .ql-embed-selected {
 			border: 1px dashed #999;
 		}
