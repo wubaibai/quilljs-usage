@@ -20,6 +20,7 @@ import wordCounter from './modules/wordCounter';
 import sizeStyle from './register/sizeStyle';
 import answerTagBlot from './register/answerTagBlot';
 import customClassDiv from './register/customClassDiv';
+import getData from './data/get';
 
 import '../css/index/welcome.css';
 import '../css/quill/editor.css';
@@ -56,4 +57,8 @@ $('.sample-selector').on('change', function () {
 
 	const afterHtml = $('.ql-editor').html();
 	$('.after pre').text(afterHtml);
+});
+
+$('.get-delta').on('click', () => {
+	console.log(getData());
 });
