@@ -48,6 +48,10 @@ variable.editor = new Quill('#editor-sample', options);
 
 variable.editor.on('text-change', textChange);
 
+variable.editor.on('selection-change', (range) => {
+	console.log(range);
+});
+
 $('#custom-button').on('click', () => insertAnswerTag('3', '你好嗎333?'));
 
 $('.sample-selector').on('change', function () {
