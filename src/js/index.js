@@ -20,6 +20,7 @@ import wordCounter from './modules/wordCounter';
 import sizeStyle from './register/sizeStyle';
 import answerTagBlot from './register/answerTagBlot';
 import customClassDiv from './register/customClassDiv';
+import paragraphBreakBlot from './register/paragraphBreakBlot';
 import getData from './data/get';
 
 import '../css/index/welcome.css';
@@ -39,6 +40,7 @@ const mappingSampleHtml = [
 Quill.register(sizeStyle, false);
 Quill.register(answerTagBlot);
 Quill.register(customClassDiv);
+Quill.register(paragraphBreakBlot);
 Quill.register('modules/imageResize', imageResize);
 Quill.register('modules/wordCounter', wordCounter);
 
