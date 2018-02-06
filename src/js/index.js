@@ -13,6 +13,7 @@ import answerTagSample, {
 	sampleQuoteContent,
 	sampleCustomizeText,
 	sampleCustomizeNewText,
+	sampleTable,
 } from './data/sample';
 import textChange from './event/textChange';
 import insertAnswerTag from './event/insertAnswerTag';
@@ -35,6 +36,7 @@ const mappingSampleHtml = [
 	sampleQuoteContent,
 	sampleCustomizeText,
 	sampleCustomizeNewText,
+	sampleTable,
 ];
 
 Quill.register(sizeStyle, false);

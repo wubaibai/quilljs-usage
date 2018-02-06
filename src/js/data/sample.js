@@ -77,4 +77,19 @@ export const sampleCustomizeNewText = `<p>邀您填寫【<u style="color: rgb(25
 `;
 /* eslint-enable max-len */
 
+export const sampleTable = `
+<table>
+	<tr>
+		<th>Company</th>
+		<th>Contact</th>
+		<th>Country</th>
+	</tr>
+	<tr>
+		<td>Alfreds Futterkiste</td>
+		<td>Maria Anders</td>
+		<td>Germany</td>
+	</tr>
+</table>
+`;
+
 export default sample;
